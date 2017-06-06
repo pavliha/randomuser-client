@@ -10,15 +10,18 @@ class RandomUserTest extends PHPUnit_Framework_TestCase {
 	public function testGetUser() {
 		$gen = new Generator();
 
+
 		$user = $gen->getUser();
 
 		$this->assertTrue(strlen($user->getFirstName()) > 0);
+
 	}
 
 	public function testGetMale() {
 		$gen = new Generator();
 
 		$user = $gen->getMale();
+
 
 		$this->assertEquals($user->getGender(), User::MALE);
 	}
@@ -36,7 +39,8 @@ class RandomUserTest extends PHPUnit_Framework_TestCase {
 
 		$users = $gen->getUsers(10);
 
-		$this->assertEquals(count($users), 10);
+
+        $this->assertEquals(count($users), 10);
 	}
 
 	public function testGetFemales() {

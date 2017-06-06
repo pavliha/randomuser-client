@@ -14,7 +14,6 @@ class User {
 	private $streetAddress;
 	private $city;
 	private $state;
-	private $zip;
 	private $email;
 	private $username;
 	private $password;
@@ -26,7 +25,6 @@ class User {
 	private $dob;
 	private $phone;
 	private $cell;
-	private $SSN;
 	private $picture;
 
 	public function getGender() {
@@ -50,9 +48,7 @@ class User {
 	public function getState() {
 		return $this->state;
 	}
-	public function getZip() {
-		return $this->zip;
-	}
+
 	public function getEmail() {
 		return $this->email;
 	}
@@ -85,9 +81,6 @@ class User {
 	}
 	public function getCell() {
 		return $this->cell;
-	}
-	public function getSsn() {
-		return $this->SSN;
 	}
 	public function getPicture() {
 		return $this->picture;
@@ -165,10 +158,6 @@ class User {
 	}
 	public function setCell($cell) {
 		$this->cell = $cell;
-		return $this;
-	}
-	public function setSsn($SSN) {
-		$this->SSN = $SSN;
 		return $this;
 	}
 	public function setPicture($picture) {

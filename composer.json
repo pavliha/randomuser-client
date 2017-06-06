@@ -1,16 +1,18 @@
 {
-	"name": "zimtronic/randomuser-generator",
+	"name": "pavliha/randomuser-generator",
 	"type": "library",
 	"license": "GPL-3.0+",
 	"authors": [{
-		"name": "Philip Whitt"
+		"name": "Pavel Kostyuk"
 	}],
 	"require": {
 		"php" : ">=5.3",
-		"guzzlehttp/guzzle" : "~5.0"
+		"guzzlehttp/guzzle" : "^6.0"
 	},
 	"require-dev": {
-		"phpunit/phpunit" : "4.5.0"
+
+		"symfony/var-dumper": "3.3.*",
+		"phpunit/phpunit" : "4.8.*"
 	},
 	"autoload": {
 		"psr-0": { 
