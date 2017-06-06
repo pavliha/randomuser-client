@@ -1,2 +1,4 @@
 vendor
+### PHPSTORM BOOGERS ###
+.idea/*
 /.idea/*
